@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hoja de Estilos -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_grid.css">
     <title>Home Joyería</title>
 </head>
-<body>
+<body class="container">
     <!-- Encabezado -->
     <header>
         <!-- Logo -->
         <img class="logo" src="./medios/logo.jpg" alt="Logo de la marca">
 
         <!-- Menú de navegación -->
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#" class="seleccionado">Home</a></li>
                 <li><a href="pages/aretes.html">Aretes</a></li>
@@ -25,45 +25,51 @@
         </nav>
     </header>
 
-    <!-- Sección principal - cuerpo -->
-     <main>
-        <!-- Banner -->
-        <section class="banner">
+    <!-- Sección Principal-->
+    <!-- Banner -->
+    <section class="banner">
+        <div class="opaco">
             <h1>JeCa Joyería</h1>
             <p>Todo en accesorios para tí</p>
-        </section>
+        </div>
+    </section>
 
-         <!-- Presentación -->
-         <section>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit vero incidunt labore, atque quis quae. Omnis eius, corrupti esse in, soluta qui eaque optio ab a ullam obcaecati maxime. Veritatis.</p>
-         </section>
+    <!-- Presentación -->
+    <section class="presentacion">
+        <p>En nuestra joyería, cada pieza cuenta una historia. Diseñamos y seleccionamos joyas únicas que combinan elegancia, calidad y un toque de distinción. Ya sea que busques un detalle especial, un símbolo de amor eterno o simplemente algo que refleje tu estilo, aquí encontrarás la joya perfecta para cada momento de tu vida.</p>
+    </section>
 
-         <!-- Destacados -->
-         <section>
-            <h2>Destacados del mes</h2>
-            <!-- Nuevos ingresos -->
-            <div>
-                <h3>Nuevos ingresos</h3>
-                <p>$100.000</p>
-            </div>
-            <!-- Promoción -->
-             <div>
-                <h3>Promoción</h3>
-                <p>$80.000</p>
-             </div>
-         </section>
-     </main>
+    <!-- Destacados -->
+    <section class="destacados">
+        <h2>Destacados del mes</h2>
+        <!-- Nuevos ingresos -->
+        <div>
+            <h3>Nuevos ingresos</h3>
+            <img src="./medios/PulseraNuevoIngreso.png" alt="" class="img-nuevos">
+            <p>$300.000</p>
+       </div>
+    </section>
+
+    <!-- Promoción -->
+    <section class="promocion">
+        <h2>Nuestras Promociones</h2>
+        <div>
+            <h3>Promoción</h3>
+            <img src="./medios/aretes_4.jpeg" alt="" class="img-nuevos">
+            <p>$80.000</p>
+        </div>
+    </section>
 
      <!-- pie de página -->
-     <footer>
+     <footer class="footer">
         <!-- Instagram -->
         <a href="https://www.instagram.com" target="_blank"><img class="redes" src="./medios/Instagram-app-logo.jpg" alt="Instagram"></a>
 
         <!-- Facebook -->
         <a href="https://www.facebook.com" target="_blank"><img class="redes" src="./medios/Facebook-app-logo.jpg" alt="Facebook"></a>
 
-        <!-- TikTok -->
-        <a href="https://web.whatsapp.com/" target="_blank"><img class="redes" src="./medios/WhatsApp.jpg" alt="WhatsApp"></a>
+        <!-- WhatsApp -->
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="redes flotante" src="./medios/WhatsApp.jpg" alt="WhatsApp"></a>
      </footer>
 </body>
 </html>

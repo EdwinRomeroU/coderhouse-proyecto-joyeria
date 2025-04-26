@@ -34,18 +34,20 @@ header{
     width: 100px;
 }
 
-.navbar{
+.navbar-joyeria{
     width: 100%;
+    background-color: var(--azul-oscuro);
+    color: var(--gris-color);
 }
 
-.navbar a{
+.navbar-joyeria a{
     text-decoration: none;
     color: var(--gris-color);
     padding: 20px;
     font-weight: bold;
 }
 
-.navbar ul{ 
+.navbar-joyeria ul{ 
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -54,6 +56,10 @@ header{
     align-items: center;
     margin-right: 10px;
 }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+  }
 
 /* Main */
 .banner{

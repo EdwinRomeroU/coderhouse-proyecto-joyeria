@@ -12,7 +12,8 @@
     --azul-oscuro: #091057;
     --azul-claro: #024CAA;
     --naranja-color: #EC8305;
-    --gris-color: #DBD3D3;
+    --gris-oscuro-color: #bbb6b6;
+    --gris-claro-color: #e7e1e1;
 }
 
 html{
@@ -37,11 +38,15 @@ header{
     width: 100%;
 }
 
-.navbar a{
+.navbar-item{
     text-decoration: none;
-    color: var(--gris-color);
-    font-weight: bold;
+    color: var(--gris-oscuro-color);
+    font-weight: 900;
 }
+
+.selected{
+    color: var(--gris-claro-color);
+ }
 
 .banner{
     grid-area: st-primaria;

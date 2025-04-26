@@ -21,18 +21,6 @@ html{
     /*font-size: 62.5%; 1rem = 10px*/
 }
 
-.container{
-    display: grid;
-    grid-template-areas: 
-    "h-header h-header"
-    "st-primaria st-primaria"
-    "st-media st-media"
-    "st-fin-izq st-fin-der"
-    "f-footer f-footer";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100px, repeat(4, 200px);
-}
-
 header{
     grid-area: h-header;
     display: flex;
@@ -53,15 +41,7 @@ header{
 .navbar a{
     text-decoration: none;
     color: var(--gris-color);
-    padding: 20px;
     font-weight: bold;
-}
-
-.navbar ul{ 
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
 }
 
 .banner{
@@ -116,18 +96,36 @@ h3{
 
 .redes{
     width: 30px;
- }
-
- .flotante{
-    position: fixed;
-    bottom: 250px;
-    right: 20px;
- }   
+ } 
 
 @media (max-width: 750px) {
     
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "h-header"
+        "st-primaria"
+        "st-media"
+        "st-fin-izq"
+        "st-fin-der"
+        "f-footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px, repeat(5, 200px);
+    }
+
+    .navbar a{
+        padding-left: 20px;
+    }
+
     .navbar ul{
         justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .titulo-contacto{
+        font-size: 1.5rem;
     }
 
     .presentacion{
@@ -143,7 +141,7 @@ h3{
     }
     
     .img-nuevos{
-        width: 200px;
+        width: 150px;
     }
     
     .promocion, .mensaje{
@@ -156,8 +154,27 @@ h3{
 
 @media (min-width: 751px) {
 
-    .navbar ul{
-        justify-content: flex-end;
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "h-header h-header"
+        "st-primaria st-primaria"
+        "st-media st-media"
+        "st-fin-izq st-fin-der"
+        "f-footer f-footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px, repeat(4, 200px);
+    }
+
+    .navbar a{
+        padding: 20px;
+    }
+
+    .navbar ul{ 
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
     }
 
     .presentacion{

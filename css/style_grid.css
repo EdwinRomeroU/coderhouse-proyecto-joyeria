@@ -5,7 +5,6 @@
 *{
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
 }
 
@@ -49,17 +48,19 @@ header{
     background-image: url(../medios/banner.jpg);
     background-size: contain;
     height: 200px;
+    margin-top: 2px;
 }
 
 .opaco{
-    background: linear-gradient(#000, transparent);
+    background: linear-gradient(var(--azul-oscuro), transparent);
     color: var(--naranja-color);
     font-weight: bold;
-    height: 150px;
+    height: 200px;
 }
 
-.titulo-contacto{
-    grid-area: st-media;
+.lema{
+    padding-left: 20px;
+    
 }
 
 h1{
@@ -76,6 +77,14 @@ h2{
     font-weight: 700;
     font-family: sans-serif;
     padding: 5px;
+}
+
+.titulo-contacto{
+    grid-area: st-media;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: sans-serif;
 }
 
 h3{
@@ -97,6 +106,25 @@ h3{
 .redes{
     width: 30px;
  } 
+
+ .formulario{
+    padding: 20px;
+ }
+
+ .div-formulario{
+    color: var(--azul-oscuro);
+    font-style: italic;
+ }
+
+ input{
+    display: flex;
+    margin-bottom: 10px;
+ }
+
+ .cta{
+    display: flex;
+    justify-content: center;
+ }
 
 @media (max-width: 750px) {
     
@@ -122,10 +150,6 @@ h3{
         list-style-type: none;
         align-items: center;
         margin-right: 10px;
-    }
-
-    .titulo-contacto{
-        font-size: 1.5rem;
     }
 
     .presentacion{
@@ -188,7 +212,7 @@ h3{
 
     .presentacion p{
         width: 70%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .destacados, .oficina{

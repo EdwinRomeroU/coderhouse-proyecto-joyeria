@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header class="header-container">
+    <header>
         <!-- Logo -->
         <img class="logo" src="../medios/logo.jpg" alt="Logo de la marca">
 
@@ -42,16 +42,34 @@
     </header>
 
     <!-- Sección principal - cuerpo -->
-     <main>
+    <main class="container m-2">
 
-        <section>
-            <h1>JeCa Joyería</h1>
-            <p class="section-p">Los mejores anillos para tu colección</p>
-            <img src="../medios/anillo_1.jpeg" alt="anillo_1" class="img-medios">
-            <img src="../medios/anillo_6.jpeg" alt="anillo_6" class="img-medios">
-            <img src="../medios/anillo_2.jpeg" alt="anillo_2" class="img-medios">
-        </section>
-
+        <div class="row">
+            <h1 class="col-12">JeCa Joyería</h1>
+            <p class="section-p col-12">
+                En nuestra colección de anillos, cada pieza es una expresión de arte, pasión y personalidad. Diseñados con materiales de alta calidad y un cuidado excepcional en cada detalle, nuestros anillos capturan momentos, emociones y sueños que se llevan puestos. Ya sea para celebrar una ocasión especial o simplemente para resaltar tu estilo único, aquí encontrarás el complemento perfecto que habla de ti y para ti.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 p-2 d-flex flex-column justify-content-center align-items-center">
+                <img src="../medios/anillo_6.jpeg" alt="anillo_6" class="img-medios img-fluid">
+                <p class="descripcion p-3">
+                    Una escultura para tus dedos. Este anillo de diseño abstracto es una expresión de creatividad y una pieza que destaca por su originalidad.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 p-2 d-flex flex-column justify-content-center align-items-center">
+                <img src="../medios/anillo_1.jpeg" alt="anillo_1" class="img-medios img-fluid">
+                <p class="descripcion p-3">
+                    La perfecta armonía entre la pureza del cristal y la pasión del rubí. Este anillo captura la luz de una manera especial, creando un brillo que enamora.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 p-2 d-flex flex-column justify-content-center align-items-center">
+                <img src="../medios/anillo_2.jpeg" alt="anillo_2" class="img-medios img-fluid">
+                <p class="descripcion p-3">
+                    Comodidad con un toque de impacto. Este anillo de banda ancha se siente genial y luce aún mejor, añadiendo un toque moderno y distintivo a tu mano.
+                </p>
+            </div>
+        </div>
      </main>
 
      <!-- pie de página -->

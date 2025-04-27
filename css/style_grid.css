@@ -131,6 +131,15 @@ h3{
     justify-content: center;
  }
 
+ .img-nuevos{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;   /* Ancho fijo */
+    height: 300px;  /* Alto fijo */
+    object-fit: cover;
+    margin: auto;
+ }
+
 @media (max-width: 750px) {
     
     .container{
@@ -167,10 +176,6 @@ h3{
         grid-area: st-fin-izq;
         padding: 10px;
         justify-items: center;
-    }
-    
-    .img-nuevos{
-        width: 150px;
     }
     
     .promocion, .mensaje{
@@ -224,10 +229,6 @@ h3{
         grid-area: st-fin-izq;
         padding: 10px;
         justify-items: center;
-    }
-    
-    .img-nuevos{
-        width: 300px;
     }
     
     .promocion, .mensaje{

@@ -31,6 +31,8 @@ header{
 .logo{
     margin: 10px;
     width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .navbar-joyeria{
@@ -115,7 +117,7 @@ h3{
 
 .img-medios{
     border-radius: 5px;
-    filter: drop-shadow(5px 3px #ddd);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     width: 350px;   /* Ancho fijo */
     height: 300px;  /* Alto fijo */
     object-fit: cover;

@@ -25,7 +25,6 @@ header{
     background-color: var(--azul-oscuro);
     display: flex;
     justify-content: space-between;
-    position: sticky;
     top: 0px;
 }
 
@@ -38,6 +37,8 @@ header{
     width: 100%;
     background-color: var(--azul-oscuro);
     color: var(--gris-color);
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar-joyeria a{
@@ -57,9 +58,10 @@ header{
     margin-right: 10px;
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;..");
-  }
+.navbar-toggler-icon{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* Main */
 .banner{
@@ -101,18 +103,29 @@ h3{
 }
 
 .section-p{
-    text-align: left;
+    text-align: justify;
     color: var(--azul-claro);
     font-size: 1rem;
-}
-
-.img-medios{
-    height: 200px;
 }
 
 .formulario{
     color: var(--azul-claro);
     font-size: 1rem;
+}
+
+.img-medios{
+    border-radius: 5px;
+    filter: drop-shadow(5px 3px #ddd);
+    width: 350px;   /* Ancho fijo */
+    height: 300px;  /* Alto fijo */
+    object-fit: cover;
+    margin: auto;
+}
+
+.descripcion{
+    color: var(--azul-claro);
+    font-size: 1rem;
+    text-align: justify;
 }
 
 /* Footer */
@@ -125,10 +138,4 @@ footer{
 
 .redes{
     width: 30px;
- }
-
- .flotante{
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
  }

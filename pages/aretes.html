@@ -15,7 +15,7 @@
         <img class="logo" src="../medios/logo.jpg" alt="Logo de la marca">
 
         <!-- Menú de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-joyeria">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-joyeria">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,15 +42,32 @@
     </header>
 
     <!-- Sección principal - cuerpo -->
-     <main>
+     <main class="container m-2">
 
-        <section>
-            <h1>JeCa Joyería</h1>
-            <p class="section-p">Aretes para toda ocasión</p>
-            <img src="../medios/aretes_1.jpeg" alt="anillo_2" class="img-medios">
-            <img src="../medios/aretes_3.jpeg" alt="anillo_1" class="img-medios">
-            <img src="../medios/aretes_4.jpeg" alt="anillo_6" class="img-medios">
-        </section>
+            <div class="row">
+                <h1 class="col-12">JeCa Joyería</h1>
+                <p class="section-p col-12">
+                    Bienvenida a nuestra colección exclusiva de aretes, donde cada diseño cuenta una historia. Desde lo delicado y minimalista hasta lo audaz y sofisticado, tenemos el par perfecto para realzar tu estilo en cada ocasión. ¡Explora, enamórate y luce única!
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../medios/aretes_1.jpeg" alt="anillo_2" class="img-medios img-fluid">
+                    <p class="descripcion p-3">
+                        Estos elegantes aretes combinan la fuerza del metal texturizado con la calidez natural de una piedra semipreciosa, creando una pieza que evoca la belleza de lo orgánico y lo contemporáneo.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 p-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../medios/aretes_3.jpeg" alt="anillo_1" class="img-medios img-fluid">
+                    <p class="descripcion p-3">
+                        Inspirados en la perfección de la naturaleza, estos aretes combinan la elegancia de la plata con la pureza de la perla, formando una delicada flor que resalta la feminidad y el estilo en cada detalle.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 p-2 d-flex flex-column justify-content-center align-items-center">
+                    <img src="../medios/aretes_4.jpeg" alt="anillo_6" class="img-medios img-fluid">
+                    <p class="descripcion p-3">Modernos y vibrantes, estos aretes de plata destacan por su diseño geométrico y la alegre combinación de piedras en distintos tonos, perfectos para resaltar tu personalidad con color y elegancia.</p>
+                </div>
+            </div>
 
      </main>
 

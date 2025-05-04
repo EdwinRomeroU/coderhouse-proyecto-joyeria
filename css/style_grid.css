@@ -21,7 +21,7 @@ html{
     /*font-size: 62.5%; 1rem = 10px*/
 }
 
-header{
+.header_joyeria{
     grid-area: h-header;
     display: flex;
     background-color: var(--azul-oscuro);
@@ -33,7 +33,7 @@ header{
     width: 100px;
 }
 
-.navbar{
+.navbar_joyeria{
     align-content: center;
     width: 100%;
 }
@@ -42,6 +42,7 @@ header{
     text-decoration: none;
     color: var(--gris-oscuro-color);
     font-weight: 900;
+    font-family: "Lato", sans-serif;
 }
 
 .selected{
@@ -56,6 +57,11 @@ header{
     margin-top: 2px;
 }
 
+.banner p{
+    color: var(--naranja-color);
+    font-weight: bold;
+}
+
 .opaco{
     background: linear-gradient(var(--azul-oscuro), transparent);
     color: var(--naranja-color);
@@ -68,11 +74,11 @@ header{
     
 }
 
-h1{
+.h1_joyeria{
     text-align: center;
     font-size: 2rem;
     font-weight: 900;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 h2{
@@ -80,7 +86,7 @@ h2{
     color: var(--azul-claro);
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     padding: 5px;
 }
 
@@ -89,18 +95,24 @@ h2{
     font-size: 1.7rem;
     text-align: center;
     font-weight: 900;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 h3{
     text-align: left;
     color: var(--azul-claro);
     font-size: 1rem;
-    font-family: sans-serif;
+    font-family: "Lato", sans-serif;
     padding: 5px;
 }
+
+.section-p{
+    text-align: justify;
+    color: var(--azul-claro);
+    font-size: 1rem;
+}
     
-.footer{
+.footer_joyeria{
     grid-area: f-footer;
     height: 50px;
     background-color: var(--azul-oscuro);
@@ -140,9 +152,24 @@ h3{
     margin: auto;
  }
 
+ .img-medios{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;   /* Ancho fijo */
+    height: 300px;  /* Alto fijo */
+    object-fit: cover;
+    margin: auto;
+}
+
+.descripcion{
+    color: var(--azul-claro);
+    font-size: 1rem;
+    text-align: justify;
+}
+
 @media (max-width: 750px) {
     
-    .container{
+    .container_joyeria{
         display: grid;
         grid-template-areas: 
         "h-header"
@@ -155,11 +182,11 @@ h3{
         grid-template-rows: 100px, repeat(5, 200px);
     }
 
-    .navbar a{
+    .navbar-item{
         padding-left: 20px;
     }
 
-    .navbar ul{
+    .ul-joyeria{
         justify-content: space-around;
         list-style-type: none;
         align-items: center;
@@ -188,7 +215,7 @@ h3{
 
 @media (min-width: 751px) {
 
-    .container{
+    .container_joyeria{
         display: grid;
         grid-template-areas: 
         "h-header h-header"
@@ -200,11 +227,11 @@ h3{
         grid-template-rows: 100px, repeat(4, 200px);
     }
 
-    .navbar a{
+    .navbar-item{
         padding: 20px;
     }
 
-    .navbar ul{ 
+    .ul-joyeria{ 
         list-style-type: none;
         display: flex;
         justify-content: flex-end;

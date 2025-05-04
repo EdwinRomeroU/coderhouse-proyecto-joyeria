@@ -5,39 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hoja de Estilos -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_grid.css">
     <title>Anillos</title>
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
+    <header class="header_joyeria">
         <!-- Logo -->
         <img class="logo" src="../medios/logo.jpg" alt="Logo de la marca">
 
         <!-- Menú de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-joyeria">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aretes.html">Aretes</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Anillos  <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pulseras.html">Pulseras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactanos.html">Contáctanos</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="navbar_joyeria">
+            <ul class="ul-joyeria">
+                <li><a href="../index.html" class="navbar-item">Home</a></li>
+                <li><a href="/pages/aretes.html" class="navbar-item">Aretes</a></li>
+                <li><a href="#" class="navbar-item selected">Anillos</a></li>
+                <li><a href="/pages/pulseras.html" class="navbar-item">Pulseras</a></li>
+                <li><a href="/pages/contactanos.html" class="navbar-item">Contáctanos</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -45,7 +30,7 @@
     <main class="container m-2">
 
         <div class="row">
-            <h1 class="col-12">JeCa Joyería</h1>
+            <h1 class="col-12 h1_joyeria">JeCa Joyería</h1>
             <p class="section-p col-12">
                 En nuestra colección de anillos, cada pieza es una expresión de arte, pasión y personalidad. Diseñados con materiales de alta calidad y un cuidado excepcional en cada detalle, nuestros anillos capturan momentos, emociones y sueños que se llevan puestos. Ya sea para celebrar una ocasión especial o simplemente para resaltar tu estilo único, aquí encontrarás el complemento perfecto que habla de ti y para ti.
             </p>
@@ -73,7 +58,7 @@
      </main>
 
      <!-- pie de página -->
-     <footer>
+     <footer class="footer_joyeria">
         <!-- Instagram -->
         <a href="https://www.instagram.com" target="_blank"><img class="redes" src="../medios/Instagram-app-logo.jpg" alt="Instagram"></a>
 

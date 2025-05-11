@@ -1,0 +1,19 @@
+/* Estilos del formulario en la página contactanos*/
+.formulario{
+    padding: 20px;
+ }
+
+ .div-formulario{
+    color: $color-azul-oscuro;
+    font-style: italic;
+ }
+
+ input{
+    display: flex;
+    margin-bottom: 10px;
+ }
+
+ .cta{
+    display: flex;
+    justify-content: center;
+ }

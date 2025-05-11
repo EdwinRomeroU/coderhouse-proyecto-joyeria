@@ -1,0 +1,18 @@
+/* Estilos del footer*/
+
+.footer_joyeria{
+    grid-area: f-footer;
+    height: 50px;
+    background-color: $color-azul-oscuro;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.redes{
+    width: 30px;
+
+    &:hover{
+        transform: scale(1.5);
+     }
+
+ }

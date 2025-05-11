@@ -1,0 +1,131 @@
+/* Estilos Generales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$color-azul-oscuro: #091057;
+$color-azul-claro: #024CAA;
+$color-naranja: #EC8305;
+$color-naranja-claro: #f8b96b;
+$color-gris-oscuro: #bbb6b6;
+$color-gris-claro: #e7e1e1;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-family: "Lato", sans-serif;
+}
+
+.banner{
+  grid-area: st-primaria;
+  background-image: url(../medios/banner.jpg);
+  background-size: contain;
+  height: 200px;
+  margin-top: 2px;
+
+  p{
+    color: $color-naranja;
+    font-weight: bold;
+  }
+
+}
+
+.opaco{
+  background: linear-gradient($color-azul-oscuro, transparent);
+  color: $color-naranja;
+  font-weight: bold;
+  height: 200px;
+}
+
+.lema{
+  padding-left: 20px;
+  
+}
+
+.h1_joyeria{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  color: $color-naranja
+}
+
+h2{
+  text-align: left;
+  color: $color-azul-claro;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+}
+
+.titulo-contacto{
+  grid-area: st-media;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+
+h3{
+  text-align: left;
+  color: $color-azul-claro;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+}
+
+.section-p{
+  text-align: justify;
+  color: $color-azul-claro;
+  font-size: 1rem;
+}
+  
+.footer_joyeria{
+  grid-area: f-footer;
+  height: 50px;
+  background-color: $color-azul-oscuro;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.redes{
+  width: 30px;
+
+  &:hover{
+    transform: scale(1.2);
+  }
+
+}
+
+.img-nuevos{
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;   /* Ancho fijo */
+  height: 300px;  /* Alto fijo */
+  object-fit: cover;
+  margin: auto;
+}
+
+.img-medios{
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 350px;   /* Ancho fijo */
+  height: 300px;  /* Alto fijo */
+  object-fit: cover;
+  margin: auto;
+}
+
+.descripcion{
+  color: $color-azul-claro;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@import "./partials/nav-style.scss";
+@import "./partials/footer-style.scss";
+@import "./partials/form-style.scss";
+@import "./partials/media-style.scss";

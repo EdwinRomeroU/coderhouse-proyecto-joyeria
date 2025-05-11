@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* Estilos Generales*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+.banner {
+  grid-area: st-primaria;
+  background-image: url(../medios/banner.jpg);
+  background-size: contain;
+  height: 200px;
+  margin-top: 2px;
+}
+.banner p {
+  color: #EC8305;
+  font-weight: bold;
+}
+
+.opaco {
+  background: linear-gradient(#091057, transparent);
+  color: #EC8305;
+  font-weight: bold;
+  height: 200px;
+}
+
+.lema {
+  padding-left: 20px;
+}
+
+.h1_joyeria {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+  color: #EC8305;
+}
+
+h2 {
+  text-align: left;
+  color: #024CAA;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+}
+
+.titulo-contacto {
+  grid-area: st-media;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  text-align: left;
+  color: #024CAA;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+}
+
+.section-p {
+  text-align: justify;
+  color: #024CAA;
+  font-size: 1rem;
+}
+
+.footer_joyeria {
+  grid-area: f-footer;
+  height: 50px;
+  background-color: #091057;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.redes {
+  width: 30px;
+}
+.redes:hover {
+  transform: scale(1.2);
+}
+
+.img-nuevos {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 350px; /* Ancho fijo */
+  height: 300px; /* Alto fijo */
+  object-fit: cover;
+  margin: auto;
+}
+
+.img-medios {
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 350px; /* Ancho fijo */
+  height: 300px; /* Alto fijo */
+  object-fit: cover;
+  margin: auto;
+}
+
+.descripcion {
+  color: #024CAA;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Estilos de header y barra de navegación*/
+.header_joyeria {
+  grid-area: h-header;
+  display: flex;
+  background-color: #091057;
+  width: 100%;
+}
+
+.logo {
+  margin: 10px;
+  width: 100px;
+}
+
+.navbar_joyeria {
+  align-content: center;
+  width: 100%;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #bbb6b6;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+.navbar-item:hover {
+  text-decoration: none;
+  color: #f8b96b;
+}
+
+.selected {
+  color: #f8b96b;
+}
+
+/* Estilos del footer*/
+.footer_joyeria {
+  grid-area: f-footer;
+  height: 50px;
+  background-color: #091057;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.redes {
+  width: 30px;
+}
+.redes:hover {
+  transform: scale(1.5);
+}
+
+/* Estilos del formulario en la página contactanos*/
+.formulario {
+  padding: 20px;
+}
+
+.div-formulario {
+  color: #091057;
+  font-style: italic;
+}
+
+input {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos Responsive (media) */
+@media (max-width: 750px) {
+  .container_joyeria {
+    display: grid;
+    grid-template-areas: "h-header" "st-primaria" "st-media" "st-fin-izq" "st-fin-der" "f-footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px, repeat(5, 200px);
+  }
+  .navbar-item {
+    padding-left: 20px;
+  }
+  .ul-joyeria {
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .presentacion {
+    grid-area: st-media;
+    padding: 10px;
+    justify-items: center;
+  }
+  .destacados, .oficina {
+    grid-area: st-fin-izq;
+    padding: 10px;
+    justify-items: center;
+  }
+  .promocion, .mensaje {
+    grid-area: st-fin-der;
+    padding: 10px;
+    justify-items: center;
+  }
+}
+@media (min-width: 751px) {
+  .container_joyeria {
+    display: grid;
+    grid-template-areas: "h-header h-header" "st-primaria st-primaria" "st-media st-media" "st-fin-izq st-fin-der" "f-footer f-footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px, repeat(4, 200px);
+  }
+  .navbar-item {
+    padding: 20px;
+  }
+  .ul-joyeria {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .presentacion {
+    grid-area: st-media;
+    padding: 10px;
+    justify-items: center;
+  }
+  .presentacion p {
+    width: 70%;
+    font-size: 1.1rem;
+  }
+  .destacados, .oficina {
+    grid-area: st-fin-izq;
+    padding: 10px;
+    justify-items: center;
+  }
+  .promocion, .mensaje {
+    grid-area: st-fin-der;
+    padding: 10px;
+    justify-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

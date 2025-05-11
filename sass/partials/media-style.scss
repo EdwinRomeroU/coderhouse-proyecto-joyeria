@@ -1,0 +1,99 @@
+/* Estilos Responsive (media) */
+@media (max-width: 750px) {
+    
+    .container_joyeria{
+        display: grid;
+        grid-template-areas: 
+        "h-header"
+        "st-primaria"
+        "st-media"
+        "st-fin-izq"
+        "st-fin-der"
+        "f-footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 100px, repeat(5, 200px);
+    }
+
+    .navbar-item{
+        padding-left: 20px;
+    }
+
+    .ul-joyeria{
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .presentacion{
+        grid-area: st-media;
+        padding: 10px;
+        justify-items: center;
+    }
+    
+    .destacados, .oficina{
+        grid-area: st-fin-izq;
+        padding: 10px;
+        justify-items: center;
+    }
+    
+    .promocion, .mensaje{
+        grid-area: st-fin-der;
+        padding: 10px;
+        justify-items: center;
+    } 
+    
+}
+
+@media (min-width: 751px) {
+
+    .container_joyeria{
+        display: grid;
+        grid-template-areas: 
+        "h-header h-header"
+        "st-primaria st-primaria"
+        "st-media st-media"
+        "st-fin-izq st-fin-der"
+        "f-footer f-footer";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px, repeat(4, 200px);
+    }
+
+    .navbar-item{
+        padding: 20px;
+    }
+
+    .ul-joyeria{ 
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    .presentacion{
+        grid-area: st-media;
+        padding: 10px;
+        justify-items: center;
+    }
+
+    .presentacion p{
+        width: 70%;
+        font-size: 1.1rem;
+    }
+    
+    .destacados, .oficina{
+        grid-area: st-fin-izq;
+        padding: 10px;
+        justify-items: center;
+    }
+    
+    .promocion, .mensaje{
+        grid-area: st-fin-der;
+        padding: 10px;
+        justify-items: center;
+    } 
+    
+}

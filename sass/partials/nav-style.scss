@@ -1,0 +1,35 @@
+/* Estilos de header y barra de navegación*/
+
+.header_joyeria{
+    grid-area: h-header;
+    display: flex;
+    background-color: $color-azul-oscuro;
+    width: 100%;
+}
+
+.logo{
+    margin: 10px;
+    width: 100px;
+}
+
+.navbar_joyeria{
+    align-content: center;
+    width: 100%;
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: $color-gris-oscuro;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+
+    &:hover{
+        text-decoration: none;
+        color: $color-naranja-claro;
+    }
+
+}
+
+.selected{
+    color: $color-naranja-claro;
+ }

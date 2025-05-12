@@ -42,15 +42,6 @@ html {
   color: #EC8305;
 }
 
-h2 {
-  text-align: left;
-  color: #024CAA;
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
-  padding: 5px;
-}
-
 .titulo-contacto {
   grid-area: st-media;
   font-size: 1.7rem;
@@ -59,12 +50,17 @@ h2 {
   font-family: "Lato", sans-serif;
 }
 
-h3 {
+h3, h2 {
   text-align: left;
   color: #024CAA;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   padding: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .section-p {
@@ -112,6 +108,27 @@ h3 {
   text-align: justify;
 }
 
+.animacion {
+  animation-name: resaltar;
+  animation-iteration-count: 2;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+@keyframes resaltar {
+  0% {
+    color: #091057;
+    text-decoration: underline;
+  }
+  50% {
+    color: #024CAA;
+    text-decoration: none;
+  }
+  100% {
+    color: #091057;
+    text-decoration: underline;
+  }
+}
 /* Estilos de header y barra de navegación*/
 .header_joyeria {
   grid-area: h-header;

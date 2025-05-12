@@ -27,20 +27,17 @@
 
     .presentacion{
         grid-area: st-media;
-        padding: 10px;
-        justify-items: center;
+        @include padding-justify-center;
     }
     
     .destacados, .oficina{
         grid-area: st-fin-izq;
-        padding: 10px;
-        justify-items: center;
+        @include padding-justify-center;
     }
     
     .promocion, .mensaje{
         grid-area: st-fin-der;
-        padding: 10px;
-        justify-items: center;
+        @include padding-justify-center;
     } 
     
 }
@@ -75,8 +72,7 @@
 
     .presentacion{
         grid-area: st-media;
-        padding: 10px;
-        justify-items: center;
+        @include padding-justify-center;
     }
 
     .presentacion p{
@@ -86,14 +82,12 @@
     
     .destacados, .oficina{
         grid-area: st-fin-izq;
-        padding: 10px;
-        justify-items: center;
+        @include padding-justify-center;
     }
     
     .promocion, .mensaje{
         grid-area: st-fin-der;
-        padding: 10px;
-        justify-items: center;
+        @include padding-justify-center;
     } 
     
 }

@@ -9,6 +9,11 @@ $color-naranja-claro: #f8b96b;
 $color-gris-oscuro: #bbb6b6;
 $color-gris-claro: #e7e1e1;
 
+@mixin padding-justify-center{
+  padding: 10px;
+  justify-items: center;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -42,7 +47,6 @@ html{
 
 .lema{
   padding-left: 20px;
-  
 }
 
 .h1_joyeria{
@@ -51,15 +55,6 @@ html{
   font-weight: 900;
   font-family: "Lato", sans-serif;
   color: $color-naranja
-}
-
-h2{
-  text-align: left;
-  color: $color-azul-claro;
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: "Lato", sans-serif;
-  padding: 5px;
 }
 
 .titulo-contacto{
@@ -76,6 +71,12 @@ h3{
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   padding: 5px;
+}
+
+h2{
+  @extend h3;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .section-p{
@@ -123,6 +124,28 @@ h3{
   color: $color-azul-claro;
   font-size: 1rem;
   text-align: justify;
+}
+
+.animacion{
+  animation-name: resaltar;
+  animation-iteration-count: 2;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+@keyframes resaltar {
+  0% { 
+    color: $color-azul-oscuro;
+    text-decoration: underline;
+  }
+  50% { 
+    color: $color-azul-claro;
+    text-decoration: none;
+  }
+  100% { 
+    color: $color-azul-oscuro; 
+    text-decoration: underline;
+  }
 }
 
 @import "./partials/nav-style.scss";
